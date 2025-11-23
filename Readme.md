@@ -85,7 +85,7 @@ Coming Soon.
 
 ### Inference
 
-We pretrain the HyperSIGMA with SLURM. This is an example of pretraining the large version of Spatial ViT:
+We provide an inference script for Qwen3-VL and related models on various remote sensing vision–language tasks:
 
 ```
 python single_infer_eval_qwen3vl_think.py \
