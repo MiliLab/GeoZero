@@ -105,7 +105,7 @@ python single_infer_eval_qwen3vl_think.py \
 
 ## ⭐ Citation
 
-If you find our HyperSIGMA helpful, please give a ⭐ and cite it as follows:
+If you find GeoZero helpful, please give a ⭐ and cite it as follows:
 
 ```
 
