@@ -46,13 +46,13 @@ Liangpei Zhang<sup>1 †</sup>
 
 
 
-# 🔥 Update
+## 🔥 Update
 
 **2025.11.25**
 - The paper is post on arXiv! **([arXiv 2406.11519](https://arxiv.org/abs/2406.11519))** 
 
 
-# 🌞 Overview
+## 🌞 Overview
 
 We present GeoZero, the first MLLM capable of performing emergent reasoning on geospatial scenes from scratch without any predefined CoT supervision. To encourage deep and reliable reasoning while maintaining answer accuracy, we construct two datasets, GeoZero-Instruct and GeoZero-Hard. GeoZero-Instruct allows the model to acquire preliminary geospatial knowledge through supervised fine-tuning, while GeoZero-Hard stimulates deep reasoning during the subsequent reinforcement learning stage. We also propose Answer-Anchored Group Relative Policy Optimization (A$^2$GRPO), where the reasoning process is regularized by the model’s own answers, encouraging diverse yet accurate thinking. GeoZero not only reduces annotation costs but also enhances the cognitive capability of MLLMs, offering new insights toward general geospatial AI.
 
@@ -71,19 +71,19 @@ We present GeoZero, the first MLLM capable of performing emergent reasoning on g
 </div>
 <br>
 
-# Datasets
+## 📖 Datasets
 
 Coming Soon.
 
-# Models
+## 🚀 Models
 
 Coming Soon.
 
 
 
-# 🔨 Usage
+## 🔨 Usage
 
-## Inference
+### Inference
 
 We pretrain the HyperSIGMA with SLURM. This is an example of pretraining the large version of Spatial ViT:
 
@@ -95,8 +95,15 @@ python single_infer_eval_qwen3vl_think.py \
 --task [task type] --batchsize 4 --gpu [gpu id] --system [whether use the system prompt (Type1)]
 ```
 
+## 🍭 Results
 
-# ⭐ Citation
+
+<div align="center">
+<img src=Figs/result.png width="100%">
+</div>
+
+
+## ⭐ Citation
 
 If you find our HyperSIGMA helpful, please give a ⭐ and cite it as follows:
 
@@ -104,10 +111,10 @@ If you find our HyperSIGMA helpful, please give a ⭐ and cite it as follows:
 
 ```
 
-# 🎺 Statement
+## 🎺 Statement
 
 For any other questions please contact di.wang at [gmail.com](mailto:wd74108520@gmail.com) or [whu.edu.cn](mailto:d_wang@whu.edu.cn).
 
 
-# 💖 Thanks
+## 💖 Thanks
 This project is based on [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL), [ms-swift](https://github.com/modelscope/ms-swift),  Thanks for their wonderful work!<br>
