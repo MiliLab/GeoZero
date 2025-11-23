@@ -4,7 +4,7 @@
 <h1>GeoZero: Incentivizing Reasoning from Scratch on Geospatial Scenes</h1>
 
 
-Di Wang<sup>1 ∗</sup>, 
+Di Wang<sup>1</sup>, 
 Shunyu Liu<sup>2</sup>, 
 Wentao Jiang<sup>1</sup>, 
 Fengxiang Wang<sup>3</sup>, 
