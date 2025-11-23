@@ -61,7 +61,7 @@ We present GeoZero, the first MLLM capable of performing emergent reasoning on g
 
 <figure>
 <div align="center">
-<img src=Fig/framework.png width="80%">
+<img src=Figs/framework.png width="80%">
 </div>
 
 <div align='center'>
