@@ -36,14 +36,6 @@ Liangpei Zhang<sup>1 †</sup>
   <a href="#-statement">Statement</a>
 </p >
 
-<figure>
-<div align="center">
-<img src=Fig/logo1.png width="20%">
-</div>
-</figure>
-
-
-
 
 
 ## 🔥 Update
