@@ -100,7 +100,12 @@ python single_infer_eval_qwen3vl_think.py \
 If you find GeoZero helpful, please give a ⭐ and cite it as follows:
 
 ```
-
+@article{wang2025geozero,
+  title   = {GeoZero: Incentivizing Reasoning from Scratch on Geospatial Scenes},
+  author  = {Wang, Di and Liu, Shunyu and Jiang, Wentao and Wang, Fengxiang and Liu, Yi and Qin, Xiaolei and Luo, Zhiming and Zhou, Chaoyang and Guo, Haonan and Zhang, Jing and Du, Bo and Tao, Dacheng and Zhang, Liangpei},
+  journal = {arXiv preprint arXiv:2511.12345},
+  year    = {2025}
+}
 ```
 
 ## 🎺 Statement
