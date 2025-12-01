@@ -40,8 +40,8 @@ Liangpei Zhang<sup>1 †</sup>
 
 ## 🔥 Update
 
-**2025.11.25**
-- The paper is post on arXiv! **([arXiv 2406.11519](https://arxiv.org/abs/2406.11519))** 
+**2025.12.01**
+- The paper is post on arXiv! **([arXiv 2406.11519](https://arxiv.org/abs/2511.22645))** 
 
 
 ## 🌞 Overview
