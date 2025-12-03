@@ -114,4 +114,4 @@ For any other questions please contact di.wang at [gmail.com](mailto:wd74108520@
 
 
 ## 💖 Thanks
-This project is based on [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL), [ms-swift](https://github.com/modelscope/ms-swift),  Thanks for their wonderful work!<br>
+This project is based on [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL), [ms-swift](https://github.com/modelscope/ms-swift), [RSEvalKit](https://github.com/fitzpchao/RSEvalKit),  Thanks for their wonderful work!<br>
