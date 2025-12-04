@@ -40,8 +40,17 @@ Liangpei Zhang<sup>1 †</sup>
 
 ## 🔥 Update
 
+
 **2025.12.04**
-- The model weights are updated to **([Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT))** and **([Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn))**
+
+- All components required for building an inference demo have been prepared.  
+- The updated **model weights** are available on:  
+  - **[Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT)**  
+  - **[Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn)**  
+- The **JSON annotation files for the test sets of several benchmarks** used in our evaluation have been released and are available at:  
+  - **[Hugging Face](https://huggingface.co/datasets/hjvsl/GeoZero_Eval_Datasets/tree/main)**  
+  *(Note: Only the JSON files are provided; the corresponding images must be downloaded from the original datasets.)*
+
 
 **2025.12.01**
 - The paper is post on arXiv! **([arXiv](https://arxiv.org/abs/2511.22645))** 
@@ -66,7 +75,30 @@ We present GeoZero, the first MLLM capable of performing emergent reasoning on g
 
 ## 📖 Datasets
 
+GeoZero relies on multiple remote sensing benchmarks for both model development and evaluation. Please manually download the corresponding image datasets from their original sources. 
+
+### 🔗 Recommended Data Sources
+
+| Dataset | Dataset | Dataset |
+|--------|---------|---------|
+| [VHM-Instruct](https://github.com/opendatalab/VHM/blob/main/docs/Data.md) | [RESISC-45](https://gcheng-nwpu.github.io/#Datasets) | [EuroSAT](https://github.com/phelber/EuroSAT) |
+| [AID](https://captain-whu.github.io/AID/) | [NASC-TG2](https://aistudio.baidu.com/datasetdetail/86451) | [fMoW](https://github.com/fMoW/dataset) |
+| [WHU-RS19](https://captain-whu.github.io/BED4RS/) | [RSVQA](https://rsvqa.sylvainlobry.com/) | [UCM](http://weegee.vision.ucmerced.edu/datasets/landuse.html) |
+| [RSVG](https://drive.google.com/file/d/1kgnmVC6FVKdxCwaoG77sOfkaIHS_XiFt/view) | [DIOR-RSVG](https://drive.google.com/drive/folders/1hTqtYsC6B-m4ED2ewx5oKuYZV13EoJp_) | [SkyEye-968k](https://huggingface.co/datasets/ZhanYang-nwpu/SkyEye-968k) |
+| [VRSBench](https://huggingface.co/datasets/xiang709/VRSBench/tree/main) | [SIRI-WHU](https://rsidea.whu.edu.cn/code_data/USGS_Dataset/The%20USGS%20image%20dataset%20of%20SIRI-WHU%20annotation.zip) | [UCM-Captions](https://github.com/201528014227051/RSICD_optimal?tab=readme-ov-file) |
+| [Sydney-Captions](https://github.com/201528014227051/RSICD_optimal?tab=readme-ov-file) | [NWPU-Captions](https://github.com/HaiyanHuang98/NWPU-Captions) | [RSICD](https://github.com/201528014227051/RSICD_optimal?tab=readme-ov-file) |
+
+We provide **pre-formatted JSON annotation files** to ensure consistent data loading and usage:
+
+### Training data
+
 Coming Soon.
+
+### Evaluation data
+
+Evaluation samples across different benchmarks are available on our continually updated Hugging Face dataset repository:
+
+👉 [GeoZero_Eval_Datasets](https://huggingface.co/datasets/hjvsl/GeoZero_Eval_Datasets/tree/main)
 
 ## 🚀 Models
 
@@ -76,6 +108,10 @@ Coming Soon.
 
 
 ## 🔨 Usage
+
+### Training
+
+Wait for update.
 
 ### Inference
 
