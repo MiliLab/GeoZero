@@ -31,7 +31,7 @@ Liangpei Zhang<sup>1 †</sup>
   <a href="#-update">Update</a> |
   <a href="#-overview">Overview</a> |
   <a href="#-datasets">Datasets</a> |
-  <a href="#-pretrained-models">Models</a> |
+  <a href="#-models">Models</a> |
   <a href="#-usage">Usage</a> |
   <a href="#-statement">Statement</a>
 </p >
@@ -40,6 +40,9 @@ Liangpei Zhang<sup>1 †</sup>
 
 ## 🔥 Update
 
+**2025.12.04**
+- The model weights are updated to **([Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT))** and **([Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn))**
+
 **2025.12.01**
 - The paper is post on arXiv! **([arXiv](https://arxiv.org/abs/2511.22645))** 
 
@@ -47,8 +50,6 @@ Liangpei Zhang<sup>1 †</sup>
 ## 🌞 Overview
 
 We present GeoZero, the first MLLM capable of performing emergent reasoning on geospatial scenes from scratch without any predefined CoT supervision. To encourage deep and reliable reasoning while maintaining answer accuracy, we construct two datasets, GeoZero-Instruct and GeoZero-Hard. GeoZero-Instruct allows the model to acquire preliminary geospatial knowledge through supervised fine-tuning, while GeoZero-Hard stimulates deep reasoning during the subsequent reinforcement learning stage. We also propose Answer-Anchored Group Relative Policy Optimization (A$^2$GRPO), where the reasoning process is regularized by the model’s own answers, encouraging diverse yet accurate thinking. GeoZero not only reduces annotation costs but also enhances the cognitive capability of MLLMs, offering new insights toward general geospatial AI.
-
-
 
 
 <figure>
@@ -69,8 +70,9 @@ Coming Soon.
 
 ## 🚀 Models
 
-Coming Soon.
-
+|Model | Weights |
+| :------- | :------: |
+|GeoZero w/o RFT| [Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT) & [Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn) |
 
 
 ## 🔨 Usage
