@@ -49,7 +49,7 @@ Liangpei Zhang<sup>1 †</sup>
   - **[Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn)**  
 - The **JSON annotation files for the test sets of several benchmarks** used in our evaluation have been released and are available at:  
   - **[Hugging Face](https://huggingface.co/datasets/hjvsl/GeoZero_Eval_Datasets/tree/main)**  
-  *(Note: Only the JSON files are provided; the corresponding images must be downloaded from the original datasets.)*
+  *(Note: Only the JSON files are provided; the corresponding images should be downloaded from the original datasets.)*
 
 
 **2025.12.01**
