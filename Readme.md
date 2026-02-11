@@ -40,6 +40,9 @@ Liangpei Zhang<sup>1 †</sup>
 
 ## 🔥 Update
 
+**2025.02.11**
+- The training datasets for SFT and RL are available at:
+  - **[Hugging Face](https://huggingface.co/datasets/hjvsl/GeoZero_Train_Datasets/tree/main)** 
 
 **2025.12.04**
 
@@ -92,11 +95,13 @@ We provide **pre-formatted JSON annotation files** to ensure consistent data loa
 
 ### Training data
 
-Coming Soon.
+Traning samples have been updated to the HuggingFace dataset repository:
+
+👉 [GeoZero_Train_Datasets](https://huggingface.co/datasets/hjvsl/GeoZero_Train_Datasets/tree/main)
 
 ### Evaluation data
 
-Evaluation samples across different benchmarks are available on our continually updated Hugging Face dataset repository:
+Evaluation samples across different benchmarks are available on our continually updated HuggingFace dataset repository:
 
 👉 [GeoZero_Eval_Datasets](https://huggingface.co/datasets/hjvsl/GeoZero_Eval_Datasets/tree/main)
 
@@ -104,7 +109,7 @@ Evaluation samples across different benchmarks are available on our continually 
 
 |Model | Weights |
 | :------- | :------: |
-|GeoZero w/o RFT| [Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT) & [Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn) |
+|GeoZero| [Hugging Face](https://huggingface.co/hjvsl/GeoZero/tree/main/GeoZero-8B-without-RFT) & [Baidu Drive](https://pan.baidu.com/s/1nJjBwO4UlVv4GFl60gjM3w?pwd=15gn) |
 
 
 ## 🔨 Usage
