@@ -120,22 +120,17 @@ Wait for update.
 
 ### Inference
 
-We provide an inference script for Qwen3-VL and related models on various remote sensing vision–language tasks:
+We provide an inference script for GeoZero on various remote sensing vision–language tasks:
 
 ```
-python single_infer_eval_qwen3vl_think.py \
+python single_infer_eval_geozero_think.py \
 --model_path [model path] \
 --json_path [dataset json path] \
 --output_path [output saved path] \
 --task [task type] --batchsize 4 --gpu [gpu id] --system [whether use the system prompt (Type1)]
 ```
 
-## 🍭 Results
-
-
-<div align="center">
-<img src=Figs/result.png width="100%">
-</div>
+The inference script of Qwen3-VL is also provided (see `single_infer_eval_qwen3vl_think.py`), using the same command as above.
 
 
 ## ⭐ Citation
