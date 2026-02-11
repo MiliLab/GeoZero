@@ -82,14 +82,21 @@ def reverse_from_qwen3vl_format(pred_bbox, orig_height, orig_width, image_patch_
     scale_w = orig_width / resized_width
     scale_h = orig_height / resized_height
 
-    print('###########', pred_bbox)
-    x1, y1, x2, y2 = pred_bbox
+    x1_p, y1_p, x2_p, y2_p = pred_bbox
+
+    x1 = x1_p / 1000.0 * resized_width
+    x2 = x2_p / 1000.0 * resized_width
+    y1 = y1_p / 1000.0 * resized_height
+    y2 = y2_p / 1000.0 * resized_height
+
     x1_orig = round(x1 * scale_w)
     y1_orig = round(y1 * scale_h)
     x2_orig = round(x2 * scale_w)
     y2_orig = round(y2 * scale_h)
 
     return x1_orig, y1_orig, x2_orig, y2_orig
+
+
 '''
 
 [
@@ -123,7 +130,7 @@ def reverse_from_qwen3vl_format(pred_bbox, orig_height, orig_width, image_patch_
 
 
 import argparse
-parser = argparse.ArgumentParser(description="Qwen-2.5-VL Inference")
+parser = argparse.ArgumentParser(description="Qwen-3-VL Inference")
 parser.add_argument(
     "--model_path",
     type=str,
@@ -244,7 +251,7 @@ class VisionLanguageInfDataset(Dataset):
         qwen_message = []
 
         if self.args.system == 'True':
-        
+            
             system = system_prompt
             system_content = {"role": "system", "content": system}
             qwen_message.append(system_content)
@@ -274,7 +281,6 @@ class VisionLanguageInfDataset(Dataset):
 
             qwen_message.append({"role": role, "content": content})
             
-
         # ★ 仅 caption 返回多参考；其他任务返回单标签
         if self.multi_ref:
             if 'refs' in data and isinstance(data['refs'], list) and len(data['refs']) >= 1:
@@ -340,7 +346,7 @@ infer_dataloader = torch.utils.data.DataLoader(vldataset, batch_size=args.batchs
 #     kwargs = caps.get(task, {"num_beams": 1, "max_new_tokens": max_new_tokens})
 #     return {"do_sample": False, "early_stopping": False, 'temperature': None, "pad_token_id": pad_id, **kwargs}
 
-# def build_generate_kwargs_thinking(task, max_new_tokens):
+# def build_generate_kwargs(task, max_new_tokens):
 #     pad_id = processor.tokenizer.pad_token_id
 #     caps = {
 #         "caption":    dict(num_beams=5, length_penalty=0.8, early_stopping=True, max_new_tokens=max_new_tokens),
@@ -402,7 +408,7 @@ with torch.no_grad():
             'top_k': 50
             })
         
-        #generate_kwargs = build_generate_kwargs_thinking(args.task, args.max_new_tokens)
+        #generate_kwargs = build_generate_kwargs(args.task, args.max_new_tokens)
         generated_ids = model.generate(**batch_inputs, **generate_kwargs)
 
         generated_ids_trimmed = [
@@ -497,7 +503,6 @@ elif args.task == 'caption':
     }
 
     smooth = SmoothingFunction().method1  # 使用更标准的平滑方法
-
 
     for n in range(1, 5):
         metrics[f'BLEU-{n}'] = corpus_bleu(
